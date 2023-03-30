@@ -47,10 +47,12 @@ namespace DemoApplication
             enviroment.DataSource = new BindingSource(environments, null);
             enviroment.DisplayMember = "Value";
             enviroment.ValueMember = "Key";
+            enviroment.SelectedItem = null;
 
             countriesDropdown.DataSource= new BindingSource(countries, null);
             countriesDropdown.DisplayMember = "Value";
             countriesDropdown.ValueMember = "Key";
+            countriesDropdown.SelectedItem = null;
 
             BarCodeFileName.Text = "BarcodeRangeUS.xml";
 
